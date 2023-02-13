@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="css/style.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chat-Search - Kokoa Clone</title>
+  </head>
+
+  <body id="chat-search-screen">
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <span>No Service</span>
+        <i class="fas fa-wifi"></i>
+      </div>
+      <div class="status-bar__column">
+        <span>21:43</span>
+      </div>
+      <div class="status-bar__column">
+        <span>70%</span>
+        <i class="fas fa-battery-three-quarters fa-lg"></i>
+        <i class="fas fa-bolt"></i>
+      </div>
+    </div>
+
+    <header class="chat-header">
+      <form class="chat-search__bar">
+        <a href="javascript:history.back()">
+          <i class="fas fa-arrow-left fa-lg"></i>
+        </a>
+        <input type="text" placeholder="Search Conversation..." />
+      </form>
+    </header>
+
+    <main class="main-screen main-chat-search">
+      <div class="chat-search__timestamp">Tuesday, June 30, 2020</div>
+
+      <div class="chat-search__message-row">
+        <img src="img/conv.jpg" />
+        <div class="chat-search__message-row--content">
+          <span class="chat-search__message--author">Shop Owner</span>
+          <div class="chat-search__message--info">
+            <span class="chat-search__message--bubble"
+              >[Order wine 25 plus-GS25 APP] This is the wine order details for
+              01/02 Gurojinseong Branch.</span
+            >
+            <span class="chat-search__message--time">21:27</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="chat-search__message-row chat-search__message-row--own">
+        <div class="chat-search__message-row--content">
+          <div class="chat-search__message--info">
+            <span class="chat-search__message--bubble">Ok, Owner</span>
+            <span class="chat-search__message--time">21:27</span>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <form class="reply">
+      <div class="reply__column">
+        <i class="far fa-plus-square fa-lg"></i>
+      </div>
+      <div class="reply__column">
+        <input type="text" placeholder="Write a message..." />
+        <i class="far fa-smile fa-lg"></i>
+        <button>
+          <i class="fas fa-arrow-up"></i>
+        </button>
+      </div>
+    </form>
+
+    <div id="no-mobile">
+      <span>Your screen is too big ㅠㅠ</span>
+    </div>
+
+    <script
+      src="https://kit.fontawesome.com/6478f529f2.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

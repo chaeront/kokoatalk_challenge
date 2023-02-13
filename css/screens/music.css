@@ -1,0 +1,126 @@
+#music__body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(226, 226, 226);
+  font-family: "Noto Serif KR", serif;
+  height: 100vh;
+}
+
+.music__main {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding: 20px;
+  height: calc(100% - 50px);
+  width: 100%;
+  box-shadow: 0px 15px 20px 5px lightgray;
+  position: relative;
+}
+
+/* header ----------------------------- */
+.music__header {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  height: 50px;
+  margin-top: 20px;
+}
+
+.music-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 40px 0px 50px 0px;
+}
+
+.main-img img {
+  border-radius: 20px;
+  width: 220px;
+  height: 220px;
+  box-shadow: 0px 15px 20px 5px #b2b285;
+}
+
+.main-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.main-title__column h1 {
+  color: #b2b285;
+  font-size: 25px;
+  margin: 0px 0px 10px 0px;
+}
+
+.main-title__column p {
+  color: gray;
+  font-size: 15px;
+  margin-bottom: 0px;
+}
+
+.main-bar__time {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0px 15px 5px 15px;
+  color: darkgray;
+  font-size: 12px;
+}
+
+.main-bar__column:last-child {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.main-bar__bar1 {
+  display: flex;
+  align-items: center;
+  width: 65%;
+  height: 5px;
+  border-radius: 5px 0px 0px 5px;
+  background-color: #b2b285;
+  position: relative;
+}
+
+.main-bar__bar2 {
+  display: flex;
+  align-items: center;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #b2b285;
+  right: 0px;
+  position: absolute;
+}
+
+.main-bar__bar3 {
+  display: flex;
+  align-items: center;
+  width: 30%;
+  height: 5px;
+  border-radius: 0px 5px 5px 0px;
+  background-color: rgb(223, 221, 221);
+}
+
+.main-play {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.main-play i:first-child,
+.main-play i:last-child {
+  color: lightgray;
+}

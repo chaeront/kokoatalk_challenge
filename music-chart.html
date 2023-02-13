@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="css/style.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music-Chart - Kokoa Clone</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200&display=swap");
+    </style>
+  </head>
+  <body id="music-chart__body">
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <span>No Service</span>
+        <i class="fas fa-wifi"></i>
+      </div>
+      <div class="status-bar__column">
+        <span>21:23</span>
+      </div>
+      <div class="status-bar__column">
+        <span>50%</span>
+        <i class="fas fa-battery-half fa-lg"></i>
+        <i class="fas fa-bolt"></i>
+      </div>
+    </div>
+
+    <div class="music-chart__main">
+      <header class="music-chart__header">
+        <div class="music-chart__header--column">
+          <a href="javascript:history.back()">
+            <i class="fas fa-arrow-left"></i>
+          </a>
+        </div>
+        <div class="music-chart__header--column">
+          <i class="fas fa-search"></i>
+        </div>
+      </header>
+
+      <div class="profile">
+        <div class="profile__column">
+          <img src="img/profile.png" />
+        </div>
+        <div class="profile__column">
+          <h1 class="profile__column--title">윤하</h1>
+        </div>
+        <div class="profile__column">
+          <h6 class="profile__column--subtitle">발라드 | 팝 | 록</h6>
+        </div>
+        <div class="profile__column--button">
+          <button class="shuffle">Shuffle</button>
+          <button class="heart">
+            <i class="fas fa-heart"></i>
+            212 971
+          </button>
+        </div>
+      </div>
+
+      <div class="music-chart">
+        <!-- 첫 번째 콘텐츠를 묶는 div-->
+        <div class="music-chart__content1">
+          <div class="music-chart__column">
+            <img src="img/chart_1.png" />
+          </div>
+          <div class="music-chart__column">
+            <p class="music-chart__content1--subtitle">윤하</p>
+            <h2 class="music-chart__content1--title">우산</h2>
+          </div>
+          <div class="music-chart__column">
+            <i class="fas fa-ellipsis-v"></i>
+          </div>
+        </div>
+        <!-- 두 번째 콘텐츠를 묶는 div-->
+        <div class="music-chart__content2" onclick="location.href='music.html'">
+          <div class="music-chart__column">
+            <i class="play fas fa-music fa-lg"></i>
+            <img src="img/main_profile.jpg" />
+          </div>
+          <div class="music-chart__column">
+            <p class="music-chart__content2--subtitle">윤하</p>
+            <h2 class="music-chart__content2--title">사건의 지평선</h2>
+          </div>
+          <div class="music-chart__column">
+            <i class="fas fa-ellipsis-v"></i>
+          </div>
+        </div>
+        <!-- 세 번째 콘텐츠를 묶는 div-->
+        <div class="music-chart__content3">
+          <div class="music-chart__column">
+            <img src="img/chart_3.jpg" />
+          </div>
+          <div class="music-chart__column">
+            <p class="music-chart__content3--subtitle">윤하</p>
+            <h2 class="music-chart__content3--title">비밀번호 486</h2>
+          </div>
+          <div class="music-chart__column">
+            <i class="fas fa-ellipsis-v"></i>
+          </div>
+        </div>
+        <!-- 네 번째 콘텐츠를 묶는 div-->
+        <div class="music-chart__content4">
+          <div class="music-chart__column">
+            <img src="img/chart_4.jpg" />
+          </div>
+          <div class="music-chart__column">
+            <p class="music-chart__content4--subtitle">윤하</p>
+            <h2 class="music-chart__content4--title">별의 조각</h2>
+          </div>
+          <div class="music-chart__column">
+            <i class="fas fa-ellipsis-v"></i>
+          </div>
+        </div>
+        <!-- 다섯 번째 콘텐츠를 묶는 div-->
+        <div class="music-chart__content5">
+          <div class="music-chart__column">
+            <img src="img/chart_5.jpg" />
+          </div>
+          <div class="music-chart__column">
+            <p class="music-chart__content5--subtitle">윤하</p>
+            <h2 class="music-chart__content5--title">오늘 헤어졌어요</h2>
+          </div>
+          <div class="music-chart__column">
+            <i class="fas fa-ellipsis-v"></i>
+          </div>
+        </div>
+        <!-- 여섯 번째 콘텐츠를 묶는 div-->
+        <div class="music-chart__content6">
+          <div class="music-chart__column">
+            <img src="img/chart_6.jpg" />
+          </div>
+          <div class="music-chart__column">
+            <p class="music-chart__content6--subtitle">윤하</p>
+            <h2 class="music-chart__content6--title">먹구름</h2>
+          </div>
+          <div class="music-chart__column">
+            <i class="fas fa-ellipsis-v"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="control-box">
+        <div class="control__column">
+          <p class="control--subtitle">윤하</p>
+          <h2 class="control--title">사건의 지평선</h2>
+        </div>
+        <div class="control__column">
+          <i class="fas fa-step-backward fa-sm"></i>
+          <i class="fas fa-pause fa-lg"></i>
+          <i class="fas fa-step-forward fa-sm"></i>
+        </div>
+      </div>
+    </div>
+
+    <div id="no-mobile">
+      <span>Your screen is too big ㅠㅠ</span>
+    </div>
+
+    <script
+      src="https://kit.fontawesome.com/6478f529f2.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

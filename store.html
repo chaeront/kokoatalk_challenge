@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="css/style.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book-Store - Kokoa Clone</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:wght@700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body id="store__body">
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <span>No Service</span>
+        <i class="fas fa-wifi"></i>
+      </div>
+      <div class="status-bar__column">
+        <span>21:23</span>
+      </div>
+      <div class="status-bar__column">
+        <span>50%</span>
+        <i class="fas fa-battery-half fa-lg"></i>
+        <i class="fas fa-bolt"></i>
+      </div>
+    </div>
+
+    <div class="store__main">
+      <header class="store-header">
+        <div class="store-header__column">
+          <a href="javascript:history.back()">
+            <i class="fas fa-arrow-left fa-lg"></i>
+          </a>
+        </div>
+        <div class="store-header__column">
+          <h1 class="store-header__title">Library</h1>
+        </div>
+        <div class="store-header__column">
+          <i class="fas fa-shopping-basket fa-lg"></i>
+        </div>
+      </header>
+
+      <form class="search-bar">
+        <input type="text" placeholder="Search books..." />
+        <button>
+          <i class="fas fa-search"></i>
+        </button>
+      </form>
+
+      <div class="store-content1">
+        <div class="store-content1__column--title">
+          <h1>Book of the day</h1>
+        </div>
+      </div>
+
+      <div class="store-content2">
+        <div class="store-content2__column--img">
+          <img src="img/main_book.jpg" />
+        </div>
+        <div class="store-content2__column">
+          <p class="store-content2__column--maintitle">
+            I Decided to Live As Me
+          </p>
+          <p class="store-content2__column--subtitle">by Kim Soo Hyun</p>
+          <div class="star-ratings">
+            <i class="fas fa-star fa-sm"></i>
+            <i class="fas fa-star fa-sm"></i>
+            <i class="fas fa-star fa-sm"></i>
+            <i class="fas fa-star fa-sm"></i>
+            <i class="fas fa-star fa-sm gray"></i>
+          </div>
+          <div class="store-content2__column--btn">
+            <button>Improvement</button>
+            <button>Essay</button>
+          </div>
+          <div class="store-content2__colum--bookmark">
+            <i class="fas fa-bookmark"></i>
+            <button>Book Now</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="store-content3">
+        <div class="store-content3__column--title">
+          <h1>Top Adventures</h1>
+        </div>
+      </div>
+
+      <div class="store-content4">
+        <div class="store-content4__column">
+          <img src="img/sub_book1.jpg" />
+          <div class="star-ratings2">
+            <i class="fas fa-star fa-sm"></i>
+            <i class="fas fa-star fa-sm"></i>
+            <i class="fas fa-star fa-sm"></i>
+            <i class="fas fa-star fa-sm"></i>
+            <i class="fas fa-star fa-sm"></i>
+          </div>
+        </div>
+        <div class="store-content4__column">
+          <img src="img/sub_book2.jpg" />
+          <div class="star-ratings2">
+            <i class="fas fa-star fa-sm"></i>
+            <i class="fas fa-star fa-sm"></i>
+            <i class="fas fa-star fa-sm"></i>
+            <i class="fas fa-star fa-sm"></i>
+            <i class="fas fa-star fa-sm gray"></i>
+          </div>
+        </div>
+        <div class="store-content4__column">
+          <img src="img/sub_book3.jpg" />
+          <div class="star-ratings2">
+            <i class="fas fa-star fa-sm"></i>
+            <i class="fas fa-star fa-sm"></i>
+            <i class="fas fa-star fa-sm gray"></i>
+            <i class="fas fa-star fa-sm gray"></i>
+            <i class="fas fa-star fa-sm gray"></i>
+          </div>
+        </div>
+        <div class="store-content4__column">
+          <img src="img/sub_book4.jpg" />
+          <div class="star-ratings2">
+            <i class="fas fa-star fa-sm"></i>
+            <i class="fas fa-star fa-sm"></i>
+            <i class="fas fa-star fa-sm"></i>
+            <i class="fas fa-star fa-sm"></i>
+            <i class="fas fa-star fa-sm"></i>
+          </div>
+        </div>
+        <div class="store-content4__column">
+          <img src="img/sub_book5.jpg" />
+          <div class="star-ratings2">
+            <i class="fas fa-star fa-sm"></i>
+            <i class="fas fa-star fa-sm"></i>
+            <i class="fas fa-star fa-sm"></i>
+            <i class="fas fa-star fa-sm gray"></i>
+            <i class="fas fa-star fa-sm gray"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="store-content3">
+        <div class="store-content3__column--title">
+          <h1>Popular authors</h1>
+        </div>
+      </div>
+
+      <div class="store-content5">
+        <div class="store-content5__column">
+          <img src="img/writer.jpg" />
+        </div>
+        <div class="store-content5__column">
+          <div class="store-content5__column--title">Kim Soo Hyun</div>
+          <div class="store-content5__column--subtitle">
+            진지하지만 심각하지 않은 사람<br />
+            밝지만 가볍지 않은 사람<br />
+            <br />
+            사람에 대한 관심으로 글을 쓰기 시작. 특유의 따뜻하면서도 날카로운
+            시선과 삶에 적용할 수 있는 속 시원한 솔루션으로 전 세계 180만 독자의
+            공감을 얻었다. [100% 스무 살], [안녕], [스무 살], [나는 나로 살기로
+            했다], [애쓰지 않고 편안하게] 등을 펴냈다.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="no-mobile">
+      <span>Your screen is too big ㅠㅠ</span>
+    </div>
+
+    <script
+      src="https://kit.fontawesome.com/6478f529f2.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

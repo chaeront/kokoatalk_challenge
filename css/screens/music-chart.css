@@ -1,0 +1,233 @@
+#music-chart__body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(226, 226, 226);
+  font-family: "Noto Serif KR", serif;
+  height: 100vh;
+}
+
+.music-chart__main {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding: 20px;
+  height: calc(100% - 50px);
+  width: 100%;
+  box-shadow: 0px 15px 20px 5px lightgray;
+  position: relative;
+}
+
+/* header ----------------------------- */
+.music-chart__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  height: 50px;
+  margin-top: 20px;
+}
+
+/* profile --------------------------------------- */
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+.profile__column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  box-shadow: 0px 5px 20px 5px lightblue;
+}
+
+.profile__column--title {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  font-size: 25px;
+  color: skyblue;
+}
+
+.profile__column--subtitle {
+  margin: 0px 0px 35px 0px;
+  color: gray;
+}
+
+.profile__column--button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 35px;
+}
+.profile__column--button button {
+  padding: 15px;
+  margin: 0px 10px 0px 10px;
+  border-radius: 25px;
+  outline: none;
+  border: none;
+  width: 120px;
+}
+
+.profile__column--button button:first-child {
+  background-color: lightblue;
+  color: white;
+  box-shadow: 0px 5px 5px lightgray;
+}
+
+.profile__column--button button:last-child {
+  background-color: white;
+  color: lightblue;
+  box-shadow: 0px 5px 5px lightgray;
+}
+
+.profile__column--button i {
+  margin-right: 5px;
+}
+
+/* music-chart --------------------------------------- */
+.music-chart {
+  overflow-y: scroll;
+  padding: 20px;
+}
+.music-chart__content1,
+.music-chart__content2,
+.music-chart__content3,
+.music-chart__content4,
+.music-chart__content5,
+.music-chart__content6 {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  height: 75px;
+  padding: 0px 15px 0px 15px lightblue;
+  padding-right: 8px;
+}
+
+.music-chart__content2 {
+  box-shadow: 0px 5px 5px lightgray;
+  border-radius: 10px;
+}
+
+/* content 전체 설정 --------------------------------------- */
+.music-chart__column {
+  position: relative;
+}
+
+.music-chart__column img {
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+  margin-right: 10px;
+  padding-left: 5px;
+}
+
+.music-chart__column:nth-child(2) {
+  width: 80%;
+}
+
+.music-chart__column:last-child {
+  color: darkgray;
+}
+
+.music-chart__content1--title,
+.music-chart__content2--title,
+.music-chart__content3--title,
+.music-chart__content4--title,
+.music-chart__content5--title,
+.music-chart__content6--title {
+  font-size: 16px;
+  margin: 8px 0px 5px 0px;
+}
+
+/* content 세부 설정 --------------------------------------- */
+.music-chart__content1--title {
+  color: lightblue;
+}
+
+.music-chart__content2--title {
+  color: #b2b285;
+}
+
+.music-chart__content3--title {
+  color: lightpink;
+}
+
+.music-chart__content4--title {
+  color: thistle;
+}
+
+.music-chart__content5--title {
+  color: rgb(178, 128, 114);
+}
+
+.music-chart__content6--title {
+  color: rgb(87, 166, 145);
+}
+
+.music-chart__content1--subtitle,
+.music-chart__content2--subtitle,
+.music-chart__content3--subtitle,
+.music-chart__content4--subtitle,
+.music-chart__content5--subtitle,
+.music-chart__content6--subtitle {
+  color: lightgray;
+  font-size: 13px;
+  margin: 5px 0px 0px 2px;
+}
+
+/* play 설정 --------------------------------------- */
+.play {
+  color: white;
+  position: absolute;
+  top: 26px;
+  left: 20px;
+}
+
+/* control-box 설정 --------------------------------------- */
+.control-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 50px;
+  width: 88%;
+  height: 70px;
+  background-color: lightblue;
+  bottom: 15px;
+  opacity: 0.9;
+  position: absolute;
+}
+
+.control__column:first-child {
+  margin-left: 20px;
+}
+
+.control__column:last-child {
+  margin-right: 20px;
+}
+
+.control__column i {
+  margin: 10px;
+  color: white;
+}
+
+.control--title {
+  color: white;
+  font-size: 16px;
+  margin: 0px 0px 5px 0px;
+}
+
+.control--subtitle {
+  color: block;
+  font-size: 13px;
+  margin: 5px 0px 0px 2px;
+}

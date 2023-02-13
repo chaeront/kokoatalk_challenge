@@ -1,0 +1,80 @@
+#friends-display-link {
+  /* a태그는 inline 태그이기 때문에 정렬을 해주려면 바꿔줘야 한다. */
+  display: block;
+  text-align: center;
+  background-color: #fafafa;
+  padding: 10px 0px;
+  font-size: 18px;
+  margin-bottom: 10px;
+  margin-top: -15px;
+}
+
+#friends-display-link i {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.friends-screen {
+  padding: 0px var(--horizontal-space);
+  margin-bottom: 100px;
+}
+
+.user-component__multi {
+  margin-top: 25px;
+  border-top: var(--main-border);
+  padding-top: 15px;
+}
+
+.user-component__multi--header {
+  margin-bottom: 10px;
+  color: var(--main-color);
+}
+
+.friends-screen__favorites {
+  margin-top: 25px;
+  border-top: var(--main-border);
+  padding-top: 15px;
+}
+.friends-screen__channel {
+  margin-top: 25px;
+  border-top: var(--main-border);
+  padding-top: 15px;
+}
+
+.friends-screen__favorites--header {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  color: var(--main-color);
+}
+
+.friends-screen__channel-header {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  color: var(--main-color);
+}
+
+@keyframes hideSplashScreen {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+#splash-screen {
+  background-color: var(--yellow);
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 130px;
+  z-index: 2001;
+  animation: hideSplashScreen 0.3s ease-in-out forwards;
+  animation-delay: 2s;
+}

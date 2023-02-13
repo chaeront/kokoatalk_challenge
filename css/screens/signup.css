@@ -1,0 +1,89 @@
+#sign-up__main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border: darkgray;
+  height: 100vh;
+}
+
+.sign-up__title {
+  color: var(--yellow);
+  margin-bottom: 100px;
+  width: 300px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.sign-up__form {
+  color: var(--yellow);
+}
+
+.sign-up__input {
+  border: none;
+  padding: 5px 2px;
+  margin-bottom: 10px;
+  background-color: transparent;
+  width: 180px;
+}
+
+.sign-up__input:not([type="submit"]) {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  transition: border-color 0.3s ease-in-out;
+}
+
+.sign-up__input::placeholder {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.sign-up__input:focus {
+  border-color: var(--yellow);
+  outline: none;
+}
+
+.sign-up__input[type="submit"] {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--yellow);
+  cursor: pointer;
+  border-radius: 5px;
+  color: white;
+  padding: 10px 150px;
+}
+
+.sign-up {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.sign-up__column {
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  padding: 8px;
+}
+
+.sign-up__column--title {
+  margin-bottom: 8px;
+  font-size: 18px;
+}
+
+.input_style input,
+.input_style progress {
+  accent-color: var(--yellow);
+}
+
+.sign-up__input[type="date"]::-webkit-datetime-edit-text,
+.sign-up__input[type="date"]::-webkit-datetime-edit-month-field,
+.sign-up__input[type="date"]::-webkit-datetime-edit-day-field,
+.sign-up__input[type="date"]::-webkit-datetime-edit-year-field {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.sign-up__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
